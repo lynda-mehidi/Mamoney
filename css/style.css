@@ -1,0 +1,286 @@
+/* Typographies */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #06a77d;
+    padding: 10px 0;
+    font-family: "Cherry Bomb One", system-ui;
+    letter-spacing: .1rem;
+    height: 70px;
+}
+
+.logo-image {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Conteneur des cartes */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Style des cartes */
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Icône en haut à gauche */
+.card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Couleurs des icônes */
+.icon-blue { background: #6EC1E4; }
+.icon-orange { background: #FF8C42; }
+.icon-purple { background: #8A56AC; }
+
+/* Style des titres */
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Style du texte */
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    flex-grow: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #06a77d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    margin-left: 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    footer nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr; /* Une seule colonne sur petits écrans */
+    }
+}
+
+
+.contact {
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        background: linear-gradient(90deg, #004080, #0073e6);
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        color: #004080;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        text-align: left;
+        font-weight: bold;
+        margin: 10px 0 5px;
+    }
+    
+    input, textarea, select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    button {
+        background-color: #0073e6;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    button:hover {
+        background-color: #005bb5;
+    }    
+    
+}
+
+/* Bloc de bienvenue */
+.bienvenue {
+    background-color: #d5eed5; /* Fond bleu */
+    color: dark;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bienvenue h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bienvenue p {
+    font-size: 1.1rem;
+    color: dark;
+    margin-bottom: 20px;
+}
+
+.bienvenue .cta-button {
+    display: inline-block;
+    background-color:  #06a77d; /* Bouton orange */
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.bienvenue .cta-button:hover {
+    background-color: #06a77d; /* Changer la couleur au survol */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .bienvenue {
+        padding: 30px 20px;
+    }
+
+    .bienvenue h2 {
+        font-size: 1.6rem;
+    }
+
+    .bienvenue p {
+        font-size: 1rem;
+    }
+
+    .bienvenue .cta-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+

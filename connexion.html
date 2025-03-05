@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se Connecter</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Lien vers le CSS -->
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <!-- Logo de Bpifrance -->
+            <img src="logo-bpifrance.jpeg" alt="Bpifrance Logo" class="logo-image">
+            <!-- Menu de navigation -->
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="connexion.html">Se Connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="cards-container">
+            <section class="card">
+                <div class="card-icon icon-blue">🔒</div>
+                <h2 class="tit">Connexion</h2>
+                <p>Entrez vos informations pour accéder à votre compte.</p>
+
+                <!-- Formulaire de connexion -->
+                <form id="connexion-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mot-de-passe"><strong>Mot de passe</strong></label>
+                        <input type="password" id="mot-de-passe" name="mot-de-passe" placeholder="Entrez votre mot de passe" required>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit">Se connecter</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bpifrance. Tous droits réservés.</p>
+            <nav>
+                <ul>
+                    <li><a href="/mentions-legales.html" target="_blank">Mentions légales</a></li>
+                    <li><a href="/cgu.html" target="_blank">Conditions Générales d'Utilisation</a></li>
+                    <li><a href="/politique-confidentialite.html" target="_blank">Politique de confidentialité</a></li>
+                    <li><a href="/cookies.html" target="_blank">Politique de cookies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
